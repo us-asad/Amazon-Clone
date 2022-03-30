@@ -57,25 +57,23 @@ export default function Checkout() {
 						))}
 					</div>
 				</div>
-				<div className="flex flex-col bg-white p-10 shadow-md">
-					{items.length > 0 && (
-						<>
-							<h2 className="whitespace-nowrap">
-								Subtotal ({numOfOrderProducts} items)&nbsp;&nbsp;
-								<span className="font-bold">
-									<Currency quantity={currencyOfOrderProducts} currency="GBP" />
-								</span>
-							</h2>
-							<button
-								role="link"
-								onClick={subtotalHandler}
-								className={`button mt-2 ${!session && "from-gray-300 to-gray-500 border-gray-200 text-gray-300 active:from-gray-500"}`}
-							>
-								{loading ? "loading..." : session ? "Proceed to checkout" : "Sign in to checkout"}
-							</button>
-						</>
-					)}
-				</div>
+				{items.length > 0 && (
+					<div className="flex flex-col bg-white p-10 shadow-md">
+						<h2 className="whitespace-nowrap">
+							Subtotal ({numOfOrderProducts} items)&nbsp;&nbsp;
+							<span className="font-bold">
+								<Currency quantity={currencyOfOrderProducts} currency="GBP" />
+							</span>
+						</h2>
+						<button
+							role="link"
+							onClick={subtotalHandler}
+							className={`button mt-2 ${!session && "from-gray-300 to-gray-500 border-gray-200 text-gray-300 active:from-gray-500"}`}
+						>
+							{loading ? "loading..." : session ? "Proceed to checkout" : "Sign in to checkout"}
+						</button>
+					</div>
+				)}
 			</main>
 		</div>
 	);

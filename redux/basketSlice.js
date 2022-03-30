@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
 	items: [],
+	alanProceedToCheckout: false
 }
 
 const basketSlice = createSlice({
@@ -28,12 +29,13 @@ const basketSlice = createSlice({
 			}
 		},
 		setSavedItems: (state,{payload}) => { state.items = payload; },
-		emptyBasket: state => { state.items = []; }
+		emptyBasket: state => { state.items = []; },
+		proceedToCheckout: (status,{payload}) => { state.alanProceedToCheckout = payload }
 	}
 });
 
 const { reducer, actions } = basketSlice;
 
 export const selectItems = state =>  state.basket.items;
-export const { addToBasket, removeFromBasket, addItem, subtractItem, setSavedItems, emptyBasket } = actions;
+export const { proceedToCheckout, addToBasket, removeFromBasket, addItem, subtractItem, setSavedItems, emptyBasket } = actions;
 export default reducer;

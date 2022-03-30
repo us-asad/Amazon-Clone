@@ -3,6 +3,7 @@ import { addItem, subtractItem, removeFromBasket } from "redux/basketSlice";
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/solid";
 import Currency from "react-currency-formatter";
+import { toast } from "react-toastify";
 
 export default function CheckoutProduct({ product }) {
 	const dispatch = useDispatch();
@@ -20,6 +21,8 @@ export default function CheckoutProduct({ product }) {
 
 	const removeItem = () => {
 		dispatch(removeFromBasket(id));
+
+		toast.error("removed from basket successfully");
 	}
 
 	return (

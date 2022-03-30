@@ -8,10 +8,8 @@ export default function Home({products}) {
 				<title>Amazon</title>
 			</Head>
 			<main className="max-w-screen-2xl mx-auto">
-			{/* Banner */}
-			<Banner />
-			{/* ProductFeed */}
-			<ProductFeed products={products} />
+				<Banner />
+				<ProductFeed products={products} />
 			</main>
 		</div>
 	);
@@ -19,6 +17,13 @@ export default function Home({products}) {
 
 export async function getServerSideProps() {
 	const response = await fetch("https://fakestoreapi.com/products");
+
+	if (response.status !== 200) return {
+		props: {
+			products: []
+		}
+	}
+
 	const data = await response.json();
 
 	return {

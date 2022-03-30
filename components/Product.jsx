@@ -3,6 +3,7 @@ import { addToBasket, addItem,  selectItems } from "redux/basketSlice";
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/solid";
 import Currency from "react-currency-formatter";
+import { toast } from "react-toastify";
 
 export default function Product({ product }) {
 	const items = useSelector(selectItems);
@@ -19,6 +20,8 @@ export default function Product({ product }) {
 		} else {
 			dispatch(addToBasket({...product,quantity: 1}));
 		}
+
+		toast.success("Added to basket successfully");
 	}
 
 	return (
