@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <a href="https://github.com/UAsad99/Programming-Blog">
+    <img src="/public/logo.png" alt="Logo" width="300" height="100">
+  </a>
 
+  <h3 align="center">Amazon Clone</h3>
+
+  <p align="center">
+    <a href="https://amazon-clone-next-stripe.vercel.app">View Demo</a>
+    ·
+    <a href="https://github.com/UAsad99/Amazon-Clone/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/UAsad99/Amazon-Clone/issues">Request Feature</a>
+  </p>
+</div>
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+<img alt="Project Overview" src="public/amazon-overview.png" />
+<b>Programming-Blog</b> useful blogs for to be professional programmer
+
+### Built With
+
+* [React ( Next.js )](https://nextjs.org)
+* [TailwindCss](https://tailwindcss.com)
+* [GraphCMS](https://graphcms.com)
+
+<!-- GETTING STARTED -->
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/UAsad99/Programming-Blog.git
+   ```
+2. Open Project Folder
+   ```sh
+   cd Programming-Blog
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Create .env.local file
+   ```sh
+   touch .env.local
+   ```
+5. [Create GraphCMS account/new project and get your project's GraphCMS Token & Api Url](https://graphcms.com)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+6. Enter your GraphCMS Token & Api Url in `.env.local`
+   ```js
+    GRAPHCMS_TOKEN = // Your GraphQL token
+    NEXT_PUBLIC_GRAPHQL_API = // Your GraphQL api url
+   ```
+7. Start Project in localhost:3000
+    ```sh
+    npm run dev
+   ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<!-- USAGE EXAMPLES -->
+## Usage
 
-## Learn More
+_See [Documentation](https://graphcms.com/docs) to understand how to use GraphCMS_
 
-To learn more about Next.js, take a look at the following resources:
+<!-- CONTACT -->
+## Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Asad - [Telegram](https://t.me/ua_tm) - uasad99@gmail.com
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Project Link: [https://github.com/UAsad99/Programming-Blog](https://github.com/UAsad99/Programming-Blog)
