@@ -18,60 +18,19 @@
 ## About The Project
 
 <img alt="Project Overview" src="public/amazon-overview.png" />
-<b>Programming-Blog</b> useful blogs for to be professional programmer
+<b>Amazon Clone</b>. purchase products, pay via stripe and relax with Alan Ai!
 
 ### Built With
 
 * [React ( Next.js )](https://nextjs.org)
 * [TailwindCss](https://tailwindcss.com)
-* [GraphCMS](https://graphcms.com)
+* [Redux](https://redux.js.org)
+* [Redux-Toolkit](https://redux-toolkit.js.org)
+* [Stripe](https://stripe.com)
+* [Firebase](https://firebase.google.com)
+* [Alan AI](https://alan.app)
+* [Fake Store Api](https://fakestoreapi.com)
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-### Prerequisites
-
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/UAsad99/Programming-Blog.git
-   ```
-2. Open Project Folder
-   ```sh
-   cd Programming-Blog
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Create .env.local file
-   ```sh
-   touch .env.local
-   ```
-5. [Create GraphCMS account/new project and get your project's GraphCMS Token & Api Url](https://graphcms.com)
-
-6. Enter your GraphCMS Token & Api Url in `.env.local`
-   ```js
-    GRAPHCMS_TOKEN = // Your GraphQL token
-    NEXT_PUBLIC_GRAPHQL_API = // Your GraphQL api url
-   ```
-7. Start Project in localhost:3000
-    ```sh
-    npm run dev
-   ```
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-_See [Documentation](https://graphcms.com/docs) to understand how to use GraphCMS_
-
-<!-- CONTACT -->
 ## Contact
 
 Asad - [Telegram](https://t.me/ua_tm) - uasad99@gmail.com
