@@ -35,4 +35,4 @@
 
 Asad - [Telegram](https://t.me/ua_tm) - uasad99@gmail.com
 
-Project Link: [https://github.com/UAsad99/Programming-Blog](https://github.com/UAsad99/Programming-Blog)
+Project Link: [https://github.com/UAsad99/Amazon-Clone](https://github.com/UAsad99/Amazon-Clone)
