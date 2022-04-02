@@ -18,7 +18,7 @@
 ## About The Project
 
 <img alt="Project Overview" src="public/amazon-overview.png" />
-<b>Amazon Clone</b>. purchase products, pay via stripe and relax with Alan Ai!
+<b>Amazon Clone</b>. purchase products, pay via stripe and relax with Alan AI!
 
 ### Built With
 
